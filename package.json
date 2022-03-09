@@ -1,0 +1,21 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "a modern JS application for searching and creating recipes",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-rebuckc2308:rebuckC2308/Forkify.git"
+  },
+  "author": "Chris Rebuck",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2",
+    "sass": "^1.49.9"
+  }
+}
