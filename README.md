@@ -21,4 +21,9 @@ this application is about searching for recipes and displaying them in the UI
 - will focus on uploading files and initiating the project correctly and uploading to repo.
 
 ## 3/9/2022:
+
 - will create a funcion that allows us to get a recipe from the API, reformats the data that we recieve from our AJAX call, and loads the recipe to the UI
+
+## 3/10/2022:
+
+- will implement event listeners for when the page loads and when a user selects a recipe from the results lists or when the page loads with a specific recipe ID (hashChange event)

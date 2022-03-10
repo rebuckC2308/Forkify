@@ -536,9 +536,13 @@ const timeout = function(s) {
 ///////////////////////////////////////
 const showRecipe = async function() {
     try {
+        //getting the ID of the recipe fro mthe hash in order to call it in this fx
+        const id = window.location.hash.slice(1);
+        //guard clause in case there is no hash in the URL
+        if (!id) return;
         renderSpinner(recipeContainer);
         //AJAX Call to our API
-        const res = await fetch('https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886');
+        const res = await fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`);
         //Convert the response to JSON
         const data = await res.json();
         //throw and error if the response fails
@@ -663,6 +667,15 @@ const renderSpinner = function(parentEl) {
     parentEl.insertAdjacentHTML('afterbegin', markup);
 };
 showRecipe();
+//create Event listeners
+// window.addEventListener('hashchange', showRecipe);
+// window.addEventListener('load', showRecipe);
+//DRY Code - can have these event listeners created at the same time:
+[
+    'hashchange',
+    'load'
+].forEach((ev)=>window.addEventListener(ev, showRecipe)
+);
 
 },{"url:../img/icons.svg":"loVOp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ"}],"loVOp":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('hWUTQ') + "icons.dfd7a6db.svg" + "?" + Date.now();

@@ -17,11 +17,16 @@ const timeout = function (s) {
 ///////////////////////////////////////
 const showRecipe = async function () {
   try {
+    //getting the ID of the recipe fro mthe hash in order to call it in this fx
+    const id = window.location.hash.slice(1);
+    //guard clause in case there is no hash in the URL
+    if (!id) return;
+
     renderSpinner(recipeContainer);
 
     //AJAX Call to our API
     const res = await fetch(
-      'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886'
+      `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
     );
     //Convert the response to JSON
     const data = await res.json();
@@ -160,3 +165,10 @@ const renderSpinner = function (parentEl) {
 };
 
 showRecipe();
+
+//create Event listeners
+// window.addEventListener('hashchange', showRecipe);
+// window.addEventListener('load', showRecipe);
+
+//DRY Code - can have these event listeners created at the same time:
+['hashchange', 'load'].forEach(ev => window.addEventListener(ev, showRecipe));

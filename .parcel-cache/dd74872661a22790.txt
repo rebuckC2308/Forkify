@@ -36,7 +36,7 @@
 160C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-selector-parser\dist\selectors\nesting.js121436361000000000 0
 152C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\features\async-iterator\filter.js121436361000000000 0
 119C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\svgo\lib132912597123231403 1
-102C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist132913474866619518 1
+102C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist132914236808296781 1
 121C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\parse-json132912597234772735 1
 109C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\.prettierrc132903676281819180 0
 146C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\stable\instance\flat-map.js121436361000000000 0
@@ -76,7 +76,7 @@
 155C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\internals\typed-array-constructor.js121436361000000000 0
 122C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\caniuse-api132912597233683219 1
 133C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\nanoid\async\index.cjs121436361000000000 0
-108C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\index.html132912600498179568 0
+108C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\index.html132914233717173006 0
 148C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\utility-types\dist\utility-types.d.ts121436361000000000 0
 151C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\features\instance\to-reversed.js121436361000000000 0
 140C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\domhandler\lib\index.d.ts.map121436361000000000 0
@@ -118,7 +118,7 @@
 148C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\internals\has-own-property.js121436361000000000 0
 148C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\es\string\virtual\includes.js121436361000000000 0
 144C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-colormin\types\index.d.ts121436361000000000 0
-107C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\README.md132913462317153898 0
+107C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\README.md132914232769136381 0
 142C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\internals\collection.js121436361000000000 0
 101C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\src132903676283830375 1
 132C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\web\README.md121436361000000000 0
@@ -164,7 +164,7 @@
 143C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\electron-to-chromium\versions.js121436361000000000 0
 155C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\caniuse-lite\data\features\xml-serializer.js121436361000000000 0
 141C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-normalize-repeat-style132912597231040295 1
-113C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist\index.html132912600500568854 0
+113C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist\index.html132914236454153039 0
 104C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\src\js132903676283321442 1
 146C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\modules\es.string.anchor.js121436361000000000 0
 155C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@parcel\runtime-js\src\helpers\bundle-url.js121436361000000000 0
@@ -239,7 +239,7 @@
 120C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\is-number132912598822962326 1
 157C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-ordered-values\types\lib\addSpace.d.ts121436361000000000 0
 123C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\lmdb\keys.js121436361000000000 0
-118C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\src\js\controller.js132913474860660014 0
+118C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\src\js\controller.js132914236805720126 0
 134C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\source-map\package.json132912597827404400 0
 156C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@parcel\transformer-postcss\lib\loadConfig.js121436361000000000 0
 133C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss\lib\comment.js121436361000000000 0
@@ -2488,7 +2488,7 @@
 159C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\core-js\internals\copy-constructor-properties.js121436361000000000 0
 146C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-merge-longhand\package.json132912597220901305 0
 143C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-merge-longhand\README.md121436361000000000 0
-124C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist\index.e37f48ea.js.map132913474866609549 0
+124C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist\index.e37f48ea.js.map132914236808276873 0
 158C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\lmdb\prebuilds\linux-arm64\node.abi72.musl.node121436361000000000 0
 155C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\caniuse-lite\data\features\array-includes.js121436361000000000 0
 137C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\postcss-merge-longhand\src132912597091715679 1
@@ -6698,7 +6698,7 @@
 158C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@swc\helpers\src\_apply_decorated_descriptor.js132732112750000000 0
 151C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@swc\helpers\src\_array_without_holes.js132732112500000000 0
 148C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@swc\helpers\src\_array_with_holes.js132732112500000000 0
-120C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist\index.e37f48ea.js132913474866589599 0
+120C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\dist\index.e37f48ea.js132914236808256584 0
 155C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@swc\helpers\src\_assert_this_initialized.js132732112500000000 0
 147C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@swc\helpers\src\_async_generator.js132732112500000000 0
 139C:\Users\14177\Desktop\JavaScript Course 2021\Complete JavaScript Course Master\Final-App\starter\node_modules\@parcel\packager-css\LICENSE121436361000000000 0
