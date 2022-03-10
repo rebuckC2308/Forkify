@@ -27,3 +27,10 @@ this application is about searching for recipes and displaying them in the UI
 ## 3/10/2022:
 
 - will implement event listeners for when the page loads and when a user selects a recipe from the results lists or when the page loads with a specific recipe ID (hashChange event)
+
+- Implementing an MVC architecture to give the project structure
+  -- Will need to refactor the code we currently have to implement our MVC architecture
+
+  -- Also installed the 'fractional' library in order to list the ingredients using fractions
+
+  -- Successfully refactored code in order to implement the MVC architecture
