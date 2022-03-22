@@ -4,14 +4,6 @@ import icons from 'url:../img/icons.svg';
 import * as model from './model.js';
 import recipeView from './views/recipeView.js';
 
-const timeout = function (s) {
-  return new Promise(function (_, reject) {
-    setTimeout(function () {
-      reject(new Error(`Request took too long! Timeout after ${s} second`));
-    }, s * 1000);
-  });
-};
-
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
@@ -28,7 +20,7 @@ const controlRecipe = async function () {
     recipeView.renderSpinner();
 
     //this method will accept 'model.state.recipe' data and store it in the object
-    recipeView.render(model.state.recipe);
+    recipeView.render(recipe);
   } catch (err) {
     alert(err);
   }

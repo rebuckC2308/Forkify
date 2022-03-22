@@ -34,3 +34,10 @@ this application is about searching for recipes and displaying them in the UI
   -- Also installed the 'fractional' library in order to list the ingredients using fractions
 
   -- Successfully refactored code in order to implement the MVC architecture
+
+## 3/22/2022:
+
+- after a short break preparing for some interviews and reviewing other course material I decided to return to working on this application.
+
+- this date I focus on creating a config.js file for all constants thate will be reused across the project.  I will also create a helpers.js file that will contain a couple of functions that will be reused across the project.
+
