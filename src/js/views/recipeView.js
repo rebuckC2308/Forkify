@@ -5,6 +5,14 @@ class RecipeView {
   #parentEl = document.querySelector('.recipe');
   #data;
 
+/**
+ * A publisher which knows when to react (when an event happens)
+ * @param {function} handler the subscriber which is the function that will react when the event happens
+ */
+  addHandlerRender(handler){
+      ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler))
+    }
+
   /**
    * Renders a spinner to the DOM while awaiting for data to load
    */

@@ -41,3 +41,4 @@ this application is about searching for recipes and displaying them in the UI
 
 - this date I focus on creating a config.js file for all constants thate will be reused across the project.  I will also create a helpers.js file that will contain a couple of functions that will be reused across the project.
 
+- Implemented the Publisher-Subscriber Pattern in orde to listen and handle events in our MVC architecture. Did this in order to place everything related to the DOM inside of a View.  Event listeners should be attached to the DOM elements in the View but the events should then be handled by the controller functions that live inside of the Controller module.

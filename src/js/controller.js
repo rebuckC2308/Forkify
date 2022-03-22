@@ -25,6 +25,10 @@ const controlRecipe = async function () {
   }
 };
 
-['hashchange', 'load'].forEach(ev =>
-  window.addEventListener(ev, controlRecipe)
-);
+/**
+ * This init function will be called at the begining and allow us to implement the Publisher-Subscriber Design patter in order to listen and handle events in the MVC architecture
+ */
+const init = function() {
+    recipeView.addHandlerRender(controlRecipe)
+}
+init()

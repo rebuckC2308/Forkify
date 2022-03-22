@@ -528,7 +528,6 @@ var _modelJs = require("./model.js");
 var _recipeViewJs = require("./views/recipeView.js");
 var _recipeViewJsDefault = parcelHelpers.interopDefault(_recipeViewJs);
 // https://forkify-api.herokuapp.com/v2
-///////////////////////////////////////
 const controlRecipe = async function() {
     try {
         //getting the ID of the recipe from the hash in order to call it in this fx
@@ -544,15 +543,12 @@ const controlRecipe = async function() {
         alert(err);
     }
 };
-//create Event listeners
-// window.addEventListener('hashchange', showRecipe);
-// window.addEventListener('load', showRecipe);
-//DRY Code - can have these event listeners created at the same time:
-[
-    'hashchange',
-    'load'
-].forEach((ev)=>window.addEventListener(ev, controlRecipe)
-);
+/**
+ * This init function will be called at the begining and allow us to implement the Publisher-Subscriber Design patter in order to listen and handle events in the MVC architecture
+ */ const init = function() {
+    _recipeViewJsDefault.default.addHandlerRender(controlRecipe);
+};
+init();
 
 },{"url:../img/icons.svg":"loVOp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ","./model.js":"Y4A21","./views/recipeView.js":"l60JC"}],"loVOp":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('hWUTQ') + "icons.dfd7a6db.svg" + "?" + Date.now();
@@ -2315,7 +2311,11 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getJSON", ()=>getJSON
 );
 var _config = require("./config");
-const timeout = function(s) {
+/**
+ * This timeout function will make the request fail
+ * @param {number} s number of seconds
+ * @returns a promise that will reject after s number of seconds
+ */ const timeout = function(s) {
     return new Promise(function(_, reject) {
         setTimeout(function() {
             reject(new Error(`Request took too long! Timeout after ${s} second`));
@@ -2347,7 +2347,19 @@ var _fractional = require("fractional");
 class RecipeView {
     #parentEl = document.querySelector('.recipe');
     #data;
-    renderSpinner() {
+    /**
+ * A publisher which knows when to react (when an event happens)
+ * @param {function} handler the subscriber which is the function that will react when the event happens
+ */ addHandlerRender(handler) {
+        [
+            'hashchange',
+            'load'
+        ].forEach((ev)=>window.addEventListener(ev, handler)
+        );
+    }
+    /**
+   * Renders a spinner to the DOM while awaiting for data to load
+   */ renderSpinner() {
         const markup = `
         <div class="spinner">
           <svg>
@@ -2358,16 +2370,24 @@ class RecipeView {
         this.#clear();
         this.#parentEl.insertAdjacentHTML('afterbegin', markup);
     }
-    render(data) {
+    /**
+   * Renders the recieved object to the DOM
+   * @param {Object} data the data to be rendered (e.g. recipe)
+   */ render(data) {
         this.#data = data;
         const markup = this.#generateMarkup();
         this.#clear();
         this.#parentEl.insertAdjacentHTML('afterbegin', markup);
     }
-     #clear() {
+    /**
+   * Clears the parent element's HTML/contents
+   */  #clear() {
         this.#parentEl.innerHTML = '';
     }
-     #generateMarkup() {
+    /**
+   * Generates markup that is to be used to render information to the UI
+   * @returns {string} a markup string is returned
+   */  #generateMarkup() {
         //Render the Recipe to the UI:
         return `
     <figure class="recipe__fig">
@@ -2445,7 +2465,11 @@ class RecipeView {
     </div>
       `;
     }
-     #generateMarkupIngredient(ing) {
+    /**
+   * Used as the callback function to generate markup for all elements inside the ingredients array 
+   * @param {Object} ing an Object that represents an ingredient
+   * @returns {string} a markup string is returned
+   */  #generateMarkupIngredient(ing) {
         return `
     <li class="recipe__ingredient">
       <svg class="recipe__icon">
