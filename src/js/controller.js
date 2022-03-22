@@ -6,7 +6,6 @@ import recipeView from './views/recipeView.js';
 
 // https://forkify-api.herokuapp.com/v2
 
-///////////////////////////////////////
 const controlRecipe = async function () {
   try {
     //getting the ID of the recipe from the hash in order to call it in this fx
@@ -26,10 +25,6 @@ const controlRecipe = async function () {
   }
 };
 
-//create Event listeners
-// window.addEventListener('hashchange', showRecipe);
-// window.addEventListener('load', showRecipe);
-//DRY Code - can have these event listeners created at the same time:
 ['hashchange', 'load'].forEach(ev =>
   window.addEventListener(ev, controlRecipe)
 );

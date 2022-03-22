@@ -5,6 +5,9 @@ class RecipeView {
   #parentEl = document.querySelector('.recipe');
   #data;
 
+  /**
+   * Renders a spinner to the DOM while awaiting for data to load
+   */
   renderSpinner() {
     const markup = `
         <div class="spinner">
@@ -17,6 +20,10 @@ class RecipeView {
     this.#parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 
+  /**
+   * Renders the recieved object to the DOM
+   * @param {Object} data the data to be rendered (e.g. recipe)
+   */
   render(data) {
     this.#data = data;
     const markup = this.#generateMarkup();
@@ -24,10 +31,17 @@ class RecipeView {
     this.#parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 
+  /**
+   * Clears the parent element's HTML/contents
+   */
   #clear() {
     this.#parentEl.innerHTML = '';
   }
 
+  /**
+   * Generates markup that is to be used to render information to the UI
+   * @returns {string} a markup string is returned
+   */
   #generateMarkup() {
     //Render the Recipe to the UI:
     return `
@@ -115,6 +129,11 @@ class RecipeView {
       `;
   }
 
+  /**
+   * Used as the callback function to generate markup for all elements inside the ingredients array 
+   * @param {Object} ing an Object that represents an ingredient
+   * @returns {string} a markup string is returned
+   */
   #generateMarkupIngredient(ing) {
     return `
     <li class="recipe__ingredient">
@@ -132,5 +151,5 @@ class RecipeView {
     `;
   }
 }
-//will create a RecipeView object and import it into our controller.js
+
 export default new RecipeView();

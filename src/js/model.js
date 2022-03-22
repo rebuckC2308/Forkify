@@ -6,6 +6,10 @@ export const state = {
   recipe: {},
 };
 
+/**
+ * Fetches recipe data that will be the state.recipe object
+ * @param {string} id id of the recipe  
+ */
 export const loadRecipe = async function (id) {
   //AJAX Call to our API
   try{
